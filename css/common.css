@@ -1,0 +1,551 @@
+@charset "utf-8";
+
+body {
+    font-family: "GmarketSansMedium";
+    overflow-y: hidden;
+    min-height: 100vh;
+    background: #fed716;
+    overflow-y: hidden;
+}
+  
+/* 라이브러리 */
+.mb-50 {
+  margin-bottom: 50px;
+}
+  
+.head-yb {
+  color: #F3B81C;
+  font-weight: bold;
+}
+  
+/* 팝업 */
+.form-box {
+  position: fixed;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+  
+/* 기본 */
+  /* 전체 레이아웃 */
+  .form-box {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #fed716;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .form-con {
+    width: 1280px;
+    height: auto;
+  }
+  
+  .form-wrap {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7)
+      url("https://i.postimg.cc/QNRDb5vw/Objects.png") no-repeat center center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  
+  .form-con-wrap {
+    width: 100%;
+  }
+  
+  .page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 0; 
+  }
+
+  .page.active {
+    display: flex !important; /* 활성화된 페이지는 flex로 표시 */
+  }
+  
+  /* 상단 타이틀 */
+  .head-text {
+    color: #030303;
+  }
+  
+  .head-1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .head-480 {
+    display: none;
+    font-size: 24px;
+  }
+  
+  /* 폼 내 타이틀 */
+  .form-con .sm-field {
+    margin-bottom: 30px;
+  }
+  
+  .form-con .label-head {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* 폼 내 버튼 커스텀 */
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  
+  .form-con .sm-choice-list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  
+  .sm-choice-list__choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+  
+  .sm-choice-list__choice input[type="radio"] {
+    display: none;
+  }
+  
+  .sm-choice-list__choice label {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 24px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .sm-choice-list__choice input[type="radio"]:checked + label,
+  .sm-choice-list__choice input[type="radio"]:hover + label {
+    background-color: #fed716;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* 폼 input 커스텀 */
+  .form-con .sm-field__input {
+    all: unset;
+    width: 50%;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 24px;
+  }
+  
+  .form-con input::placeholder {
+    font-size: 24px;
+    color: #b3b3b3;
+  }
+  
+  /* next 및 skip 버튼 커스텀 */
+  .form-con button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  
+  .form-con .next-btn,
+  .form-con .skip-btn {
+    margin: 0 auto;
+  }
+  
+  .form-con .next-btn button,
+  .form-con .skip-btn button {
+    font-family: "GmarketSansMedium";
+  }
+  
+  .form-con .next-btn {
+    margin-top: 50px;
+  }
+  
+  .form-con .next-btn button {
+    font-size: 30px;
+    color: white;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #000;
+  }
+  
+  .form-con .next-btn button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .form-con .skip-btn {
+    margin-left: 90%;
+  }
+  
+  .form-con .skip-btn button {
+    font-size: 22px;
+    color: #9f9f9f;
+  }
+  
+  .form-con .skip-btn button:hover {
+    opacity: 50%;
+  }
+  
+  /* 하단 로고 */
+  .logo-btm {
+    margin-top: 30px;
+  }
+  
+  /* 하단 스텝 이미지 */
+  .step-box {
+    margin: 0 auto;
+  }
+  
+  /* link btn */
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .home-link {
+    width: 50%;
+    background: #fed716;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 0 auto;
+  }
+  
+  .home-link .link-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .home-link:hover {
+    background: #fff;
+    color: black;
+  }
+  
+  .home-link:hover a {
+    background: #fff;
+    color: black;
+  }
+
+  /* 미디어 쿼리 기본 세팅 */
+  .label-1024,
+  .head-768,
+  .head-480,
+  .step-1024,
+  .step-768,
+  .step-480 {
+    display: none;
+  }
+  
+  /* 미디어 쿼리 */
+  /* 화면 크기 1024px 이하 */
+  @media screen and (max-width: 1024px) {
+    .form-box {
+      align-items: center;
+      justify-content: center; 
+    }
+    
+    .form-con, .form-wrap {
+     width: 90%; /* 화면에 맞게 너비를 90%로 조정 */
+     max-width: 100%;
+     height: auto; /* 고정된 높이를 제거 */
+    }
+    
+    .form-wrap, .form-con {
+      width: 100%; /* 너비를 100%로 설정 */
+      height: auto; /* 고정된 높이를 제거 */
+    }
+  
+    .step-box img {
+      width: 100%; /* 스텝 이미지의 너비를 화면에 맞추기 */
+    }
+    
+    .form-con .label-head {
+      font-size: 35px;
+    }
+  
+    .label-1920 {
+      display: none;
+    }
+  
+    .label-1024 {
+      display: block;
+    }
+  
+    .form-con input::placeholder {
+      font-size: 22px;
+    }
+  
+    .form-con .skip-btn {
+      margin-left: 70%;
+      font-size: 20px;
+    }
+  
+    .step-1920,
+    .step-768,
+    .step-480 {
+      display: none;
+    }
+  
+    .step-1024 {
+      display: block;
+    }
+  
+    .form-wrap-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .form-box {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .form-con, .form-wrap {
+      width: 100%; /* 너비를 100%로 설정하여 화면에 꽉 차도록 */
+      max-width: 100%;
+      height: auto;
+      margin: 0; /* 상하좌우의 여백 제거 */
+    }
+  
+    .page {
+      min-height: 100vh; /* 세로 길이를 화면 크기에 맞추기 */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0; /* 요소 간의 여백 제거 */
+    }
+  
+    .form-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* 세로 중앙 정렬 */
+    }
+  
+    .step-box {
+      margin: 0; /* 세로 여백 제거 */
+    }
+
+    .form-con .next-btn {
+      margin-top: 20px;
+    }
+
+    .form-con .sm-field__input {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  }
+  
+  /* 화면 크기 768px 이하 */
+  @media (max-width: 768px) {
+    .form-wrap {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .head-2 {
+      display: none;
+    }
+  
+    .head-768 {
+      display: block;
+    }
+    
+    .head-480 {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .head-1 {
+      display: none;
+    }
+  
+    .form-con .label-head {
+      font-size: 30px;
+    }
+  
+    .sm-choice-list__choice label {
+      width: 100%;
+      padding: 10px 15px;
+      white-space: nowrap;
+    }
+  
+    .form-con input::placeholder {
+      font-size: 16px;
+    }
+  
+    .form-con .next-btn button {
+      font-size: 24px;
+    }
+  
+    .form-con .skip-btn {
+      margin-left: 70%;
+    }
+  
+    .form-con .skip-btn button {
+      font-size: 16px;
+    }
+  
+    .step-1920,
+    .step-1024,
+    .step-480 {
+      display: none;
+    }
+  
+    .step-768 {
+      display: block;
+    }
+    
+     .step-box {
+      width: 80%;
+    }
+    
+     .step-box img {
+      width: 80%;
+      overflow: hidden;
+    }
+  
+    .last-head {
+      font-size: 22px;
+    }
+    
+    .mb-50 {
+      margin-bottom: 20px;
+    }
+    
+    .page {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0; /* 여백 제거 */
+    }
+
+    .step-box {
+      width: 80%;
+    }
+    
+     .step-box img {
+      width: 80%;
+      overflow: hidden;
+    }
+    
+    .home-link {
+     font-size: 18px;
+    }
+
+    .form-con .next-btn {
+      margin-top: 20px;
+    }
+
+    .form-con .sm-field__input {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  }
+  
+  /* 화면 크기 480px 이하 */
+  @media (max-width: 480px) {
+    .form-box {
+      width: 95%;
+      height: auto;
+    }
+    
+    .form-con {
+      width: 95%;
+      height: auto;
+    }
+    
+    .form-con .label-head {
+      font-size: 22px;
+    }
+  
+    .form-con input::placeholder {
+      font-size: 16px;
+    }
+    
+    .sm-choice-list__choice label {
+      font-size: 16px;
+    }
+  
+    .form-con .next-btn button {
+      font-size: 16px;
+    }
+  
+    .form-con .skip-btn {
+      margin-left: 70%;
+    }
+  
+    .form-con .skip-btn button {
+      font-size: 16px;
+    }
+  
+    .step-1920,
+    .step-1024,
+    .step-768 {
+      display: none;
+    }
+  
+    .step-480 {
+      display: block;
+    }
+    
+    .step-box {
+      width: 80%;
+    }
+    
+     .step-box img {
+      width: 80%;
+      overflow: hidden;
+    }
+
+    .head-480 {
+      font-size: 18px;
+    }
+
+    .head-768 {
+      font-size: 14px;
+    }
+  
+    .form-box {
+      overflow: hidden;
+    }
+    
+    .page {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+      gap: 0; /* 여백 제거 */
+    }
+  }
