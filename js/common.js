@@ -56,19 +56,13 @@ function showPageWithValidation(pageNumber) {
 }
 
 // 페이지 이동 및 폼 전송 처리 함수
-function skipForm(pageNumber, event) {
-    if (event) event.preventDefault();  // 폼 제출 방지
+// function skipForm(pageNumber, event) {
+// if (event) event.preventDefault();
 
-    if (pageNumber === 2) {
-        goToHomepage();
-    } else {
-        showPage(pageNumber + 1);
-    }
-}
-
-function goToHomepage() {
-    window.top.location.href = "https://a01048222597.wixsite.com/my-site-2/home";
-}
+// // 2페이지일 때는 아무 것도 하지 않음
+// if (pageNumber !== 2) {
+//     showPage(pageNumber + 1);
+// }
 
 function submitFormWithMessage(formSelector, messageSelector) {
     const form = document.querySelector(formSelector);
