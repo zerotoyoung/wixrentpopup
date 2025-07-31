@@ -67,7 +67,7 @@ function skipForm(pageNumber, event) {
 }
 
 function goToHomepage() {
-    window.location.href = "https://a01048222597.wixsite.com/my-site-2/home";
+    window.top.location.href = "https://a01048222597.wixsite.com/my-site-2/home";
 }
 
 function submitFormWithMessage(formSelector, messageSelector) {
