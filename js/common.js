@@ -56,7 +56,9 @@ function showPageWithValidation(pageNumber) {
 }
 
 // 페이지 이동 및 폼 전송 처리 함수
-function skipForm(pageNumber) {
+function skipForm(pageNumber, event) {
+    if (event) event.preventDefault();  // 폼 제출 방지
+
     if (pageNumber === 2) {
         goToHomepage();
     } else {

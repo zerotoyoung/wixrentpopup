@@ -1,227 +1,234 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro-Popup</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro-Popup</title>
 
-    <!-- CSS -->
-     <!-- font -->
-      <link rel="stylesheet" href="css/font.css">
-      <link rel="stylesheet" href="css/common.css">
+  <!-- CSS -->
+  <!-- font -->
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/common.css">
 
-    <!-- JS -->
-     <script defer src="js/common.js"></script>
+  <!-- JS -->
+  <script defer src="js/common.js"></script>
 </head>
+
 <body>
   <div class="form-box">
-    <form method="post" action="https://api.sheetmonkey.io/form/gGfgSq3e7J2Anvef4HyWCd" autoComplete="on" class="sm__form" >
+    <form method="post" action="https://api.sheetmonkey.io/form/gGfgSq3e7J2Anvef4HyWCd" autoComplete="on"
+      class="sm__form">
       <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
       <div class="form-con">
         <div class="sm__form__fields form-con-wrap">
 
           <!-- 페이지 1 -->
           <div id="page1" class="page">
-                <div class="page-wrap form-wrap">
-                  <div class="head-text mb-50">
-                    <div class="head-1">
-                      <span>
-                        <span class="head-yb">장기렌트/리스</span>
-                        &nbsp;27개 업체별 견적비교 시스템</span>
-                    </div>
-                    <div class="head-480">
-                      <span class="head-yb">장기렌트/리스</span>
-                      <br>
-                      <span>27개 업체별 견적비교 시스템</span>
-                    </div>
-                    <div class="head-2">
-                      <span>월 납입금 산출을 위한 정보를 입력해주세요. 카카오톡, 문자로 견적서를 발송해드립니다.</span>
-                    </div>
-                    <div class="head-768">
-                      <span>월 납입금 산출을 위한 정보를 입력해주세요.</span>
-                      <br>
-                      <span>카카오톡, 문자로 견적서를 발송해드립니다.</span>
-                    </div>
+            <div class="page-wrap form-wrap">
+              <div class="head-text mb-50">
+                <div class="head-1">
+                  <span>
+                    <span class="head-yb">장기렌트/리스</span>
+                    &nbsp;27개 업체별 견적비교 시스템</span>
+                </div>
+                <div class="head-480">
+                  <span class="head-yb">장기렌트/리스</span>
+                  <br>
+                  <span>27개 업체별 견적비교 시스템</span>
+                </div>
+                <div class="head-2">
+                  <span>월 납입금 산출을 위한 정보를 입력해주세요. 카카오톡, 문자로 견적서를 발송해드립니다.</span>
+                </div>
+                <div class="head-768">
+                  <span>월 납입금 산출을 위한 정보를 입력해주세요.</span>
+                  <br>
+                  <span>카카오톡, 문자로 견적서를 발송해드립니다.</span>
+                </div>
+              </div>
+              <div class="sm-field mb-50">
+                <div class="label-head">
+                  <label class="sm-field__label">견적 유형을 선택해 주세요. </label>
+                </div>
+                <div class="sm-choice-list">
+                  <div class="sm-choice-list__choice">
+                    <input type="radio" id="sm-field-RGKgP71ywj-0" name="1. 견적유형을 선택해 주세요." value="렌트" />
+                    <label for="sm-field-RGKgP71ywj-0">렌트</label>
                   </div>
-                  <div class="sm-field mb-50">
-                    <div class="label-head">
-                      <label class="sm-field__label">견적 유형을 선택해 주세요. </label>
-                    </div>
-                    <div class="sm-choice-list">
-                      <div class="sm-choice-list__choice">
-                        <input type="radio" id="sm-field-RGKgP71ywj-0" name="1. 견적유형을 선택해 주세요." value="렌트" />
-                        <label for="sm-field-RGKgP71ywj-0">렌트</label>
-                      </div>
-                      <div class="sm-choice-list__choice">
-                        <input type="radio" id="sm-field-RGKgP71ywj-1" name="1. 견적유형을 선택해 주세요." value="리스" />
-                        <label for="sm-field-RGKgP71ywj-1">리스</label>
-                      </div>
-                    </div>
+                  <div class="sm-choice-list__choice">
+                    <input type="radio" id="sm-field-RGKgP71ywj-1" name="1. 견적유형을 선택해 주세요." value="리스" />
+                    <label for="sm-field-RGKgP71ywj-1">리스</label>
                   </div>
-                  <div class="sm-field sm-field-text sm-field--large">
-                    <div class="label-head">
-                      <label class="sm-field__label" for="sm-field-6ZIkDLzMiE">희망하는 차량을 입력해 주세요. </label>
-                    </div>
-                    <div class="input-box">
-                      <input type="text" class="sm-field__input sm-field__input--text" id="sm-field-6ZIkDLzMiE" name="2. 희망하는 차량을 입력해 주세요." placeholder="예시) 그랜저, 카니발" />
-                    </div>
-                  </div>
-                  <div class="next-btn">
-                    <button type="submit" onclick="showPageWithValidation(2)">입력</button>
-                  </div>
-                  <div class="skip-btn">
-                    <button type="button" onclick="skipForm(1)">SKIP ▶</button>
-                  </div>
-                  <!-- <div class="logo-btm">
-                    <div class="logo">
-                      <a href="https://a01048222597.wixsite.com/my-site-2/home">
-                        <img src="https://i.postimg.cc/6qYsr2VH/Frame.png" alt="logo">
-                      </a>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="step-box">
-                  <div class="step-1920">
-                    <img src="https://i.postimg.cc/xT3QSP8b/step-1.png" alt="step-1">
-                  </div>
-                  <div class="step-1024">
-                    <img src="https://i.postimg.cc/43MJrXP3/step-1024-1.png" alt="step-1">
-                  </div>
-                  <div class="step-768">
-                    <img src="https://i.postimg.cc/T3dYb7hT/step-768-1.png" alt="step-1">
-                  </div>
-                  <div class="step-480">
-                    <img src="https://i.postimg.cc/c4MLryxD/step-480-1.png" alt="step-1">
-                  </div>
-                </div> -->
-          </div>
-      
-          <!-- 페이지 2 -->
-          <div id="page2" class="page" style="display:none;">
-                <div class="page-wrap form-wrap">
-                  <div class="head-text mb-50">
-                    <div class="head-1">
-                      <span>
-                        <span class="head-yb">장기렌트/리스</span>
-                        &nbsp;27개 업체별 견적비교 시스템</span>
-                    </div>
-                    <div class="head-480">
-                      <span class="head-yb">장기렌트/리스</span>
-                      <br>
-                      <span>27개 업체별 견적비교 시스템</span>
-                    </div>
-                    <div class="head-2">
-                      <span>월 납입금 산출을 위한 정보를 입력해주세요. 카카오톡, 문자로 견적서를 발송해드립니다.</span>
-                    </div>
-                    <div class="head-768">
-                      <span>월 납입금 산출을 위한 정보를 입력해주세요.</span>
-                      <br>
-                      <span>카카오톡, 문자로 견적서를 발송해드립니다.</span>
-                    </div>
-                  </div>
-                  <div class="sm-field sm-field-text sm-field--large">
-                    <div class="label-head">
-                      <label class="sm-field__label" for="sm-field-kEImBbAtuF">성함을 입력해 주세요. </label>
-                    </div>
-                    <input type="text" class="sm-field__input sm-field__input--text" id="sm-field-kEImBbAtuF" name="3. 성함을 입력해 주세요." placeholder="예시) 홍길동" required="" />
-                  </div>
-                  <div class="sm-field sm-field-phone sm-field--large">
-                    <div class="label-head">
-                      <label class="sm-field__label label-1920" for="sm-field-Y2YTi50zbu">견적서 발송을 위해 휴대폰 번호를 입력해 주세요. </label>
-                      <label class="sm-field__label label-1024" for="sm-field-Y2YTi50zbu">
-                        견적서 발송을 위해
-                        <br>
-                        휴대폰 번호를 입력해 주세요.
-                      </label>
-                    </div>
-                    <input type="tel" class="sm-field__input sm-field__input--tel" id="sm-field-Y2YTi50zbu" name="4. 견적서 발송을 위해 휴대폰 번호를 입력해 주세요." placeholder="“-”을 빼고 번호 입력" pattern="[0-9]{11}" maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 11);" autocomplete="tel" required />
-                  </div>
-                  <div class="next-btn">
-                    <button type="submit" onclick="showPageWithValidation(3)">완료</button>
-                  </div>
-                  <div class="skip-btn">
-                    <button type="button" onclick="skipForm(2)">SKIP ▶</button>
-                  </div>
-                  <!-- <div class="logo-btm">
-                    <div class="logo">
-                      <a href="https://a01048222597.wixsite.com/my-site-2/home">
-                        <img src="https://i.postimg.cc/6qYsr2VH/Frame.png" alt="logo">
-                      </a>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="step-box">
-                  <div class="step-1920">
-                    <img src="https://i.postimg.cc/gJyb0Bxb/step-2.png" alt="step-2">
-                  </div>
-                  <div class="step-1024">
-                    <img src="https://i.postimg.cc/MTQWwg3m/step-1024-2.png" alt="step-2">
-                  </div>
-                  <div class="step-768">
-                    <img src="https://i.postimg.cc/8zZkmRrM/step-768-2.png" alt="step-2">
-                  </div>
-                  <div class="step-480">
-                    <img src="https://i.postimg.cc/RhwV72cZ/step-480-2.png" alt="step-2">
-                  </div>
-                </div> -->
-          </div>
-      
-          <!-- 페이지 3 -->
-          <div id="page3" class="page form-last mb-50" style="display:none;">
-                <div class="page-wrap form-wrap form-wrap-3">
-                  <div class="head-text mb-50">
-                    <div class="head-1">
-                      <span>
-                        <span class="head-yb">장기렌트/리스</span>
-                        &nbsp;27개 업체별 견적비교 시스템</span>
-                    </div>
-                    <div class="head-480">
-                      <span class="head-yb">장기렌트/리스</span>
-                      <br>
-                      <span>27개 업체별 견적비교 시스템</span>
-                    </div>
-                    <div class="head-2">
-                      <span>월 납입금 산출을 위한 정보를 입력해주세요. 카카오톡, 문자로 견적서를 발송해드립니다.</span>
-                    </div>
-                    <div class="head-768">
-                      <span>월 납입금 산출을 위한 정보를 입력해주세요.</span>
-                      <br>
-                      <span>카카오톡, 문자로 견적서를 발송해드립니다.</span>
-                    </div>
-                  </div>
-                  <div class="last-head mb-50">
-                    <span class="label-head">견적 요청이 완료되었습니다!</span>
-                  </div>
-                  <div class="home-link">
-                    <a href="https://a01048222597.wixsite.com/my-site-2/home" class="link-btn" target="_top">렌트/리스하는 사람들 둘러보기</a>
-                  </div>
-                  <!-- <div class="logo-btm">
-                    <div class="logo">
-                      <a href="https://a01048222597.wixsite.com/my-site-2/home">
-                        <img src="https://i.postimg.cc/6qYsr2VH/Frame.png" alt="logo">
-                      </a>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="step-box">
-                  <div class="step-1920">
-                    <img src="https://i.postimg.cc/g0ZPC0dJ/step-3.png" alt="step-3">
-                  </div>
-                  <div class="step-1024">
-                    <img src="https://i.postimg.cc/v8nBwxpw/step-1024-3.png" alt="step-3">
-                  </div>
-                  <div class="step-768">
-                    <img src="https://i.postimg.cc/N0LsJK1V/step-768-3.png" alt="step-3">
-                  </div>
-                  <div class="step-480">
-                    <img src="https://i.postimg.cc/KvyYGv2k/step-480-3.png" alt="step-3">
-                  </div>
-                </div> -->
+                </div>
+              </div>
+              <div class="sm-field sm-field-text sm-field--large">
+                <div class="label-head">
+                  <label class="sm-field__label" for="sm-field-6ZIkDLzMiE">희망하는 차량을 입력해 주세요. </label>
+                </div>
+                <div class="input-box">
+                  <input type="text" class="sm-field__input sm-field__input--text" id="sm-field-6ZIkDLzMiE"
+                    name="2. 희망하는 차량을 입력해 주세요." placeholder="예시) 그랜저, 카니발" />
+                </div>
+              </div>
+              <div class="next-btn">
+                <button type="submit" onclick="showPageWithValidation(2)">입력</button>
+              </div>
+              <div class="skip-btn">
+                <button type="button" onclick="skipForm(1, event)">SKIP ▶</button>
+              </div>
+              <div class="logo-btm">
+                <div class="logo">
+                  <a href="https://a01048222597.wixsite.com/my-site-2/home">
+                    <img src="https://i.postimg.cc/6qYsr2VH/Frame.png" alt="logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="step-box">
+              <div class="step-1920">
+                <img src="https://i.postimg.cc/xT3QSP8b/step-1.png" alt="step-1">
+              </div>
+              <div class="step-1024">
+                <img src="https://i.postimg.cc/43MJrXP3/step-1024-1.png" alt="step-1">
+              </div>
+              <div class="step-768">
+                <img src="https://i.postimg.cc/T3dYb7hT/step-768-1.png" alt="step-1">
+              </div>
+              <div class="step-480">
+                <img src="https://i.postimg.cc/c4MLryxD/step-480-1.png" alt="step-1">
+              </div>
+            </div>
           </div>
 
-        </div>
-      </div>
+          <!-- 페이지 2 -->
+          <div id="page2" class="page" style="display:none;">
+            <div class="page-wrap form-wrap">
+              <div class="head-text mb-50">
+                <div class="head-1">
+                  <span>
+                    <span class="head-yb">장기렌트/리스</span>
+                    &nbsp;27개 업체별 견적비교 시스템</span>
+                </div>
+                <div class="head-480">
+                  <span class="head-yb">장기렌트/리스</span>
+                  <br>
+                  <span>27개 업체별 견적비교 시스템</span>
+                </div>
+                <div class="head-2">
+                  <span>월 납입금 산출을 위한 정보를 입력해주세요. 카카오톡, 문자로 견적서를 발송해드립니다.</span>
+                </div>
+                <div class="head-768">
+                  <span>월 납입금 산출을 위한 정보를 입력해주세요.</span>
+                  <br>
+                  <span>카카오톡, 문자로 견적서를 발송해드립니다.</span>
+                </div>
+              </div>
+              <div class="sm-field sm-field-text sm-field--large">
+                <div class="label-head">
+                  <label class="sm-field__label" for="sm-field-kEImBbAtuF">성함을 입력해 주세요. </label>
+                </div>
+                <input type="text" class="sm-field__input sm-field__input--text" id="sm-field-kEImBbAtuF"
+                  name="3. 성함을 입력해 주세요." placeholder="예시) 홍길동" required="" />
+              </div>
+              <div class="sm-field sm-field-phone sm-field--large">
+                <div class="label-head">
+                  <label class="sm-field__label label-1920" for="sm-field-Y2YTi50zbu">견적서 발송을 위해 휴대폰 번호를 입력해 주세요.
+                  </label>
+                  <label class="sm-field__label label-1024" for="sm-field-Y2YTi50zbu">
+                    견적서 발송을 위해
+                    <br>
+                    휴대폰 번호를 입력해 주세요.
+                  </label>
+                </div>
+                <input type="tel" class="sm-field__input sm-field__input--tel" id="sm-field-Y2YTi50zbu"
+                  name="4. 견적서 발송을 위해 휴대폰 번호를 입력해 주세요." placeholder="“-”을 빼고 번호 입력" pattern="[0-9]{11}" maxlength="11"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 11);" autocomplete="tel" required />
+              </div>
+              <div class="next-btn">
+                <button type="submit" onclick="showPageWithValidation(3)">완료</button>
+              </div>
+              <div class="skip-btn">
+                <button type="button" onclick="skipForm(2, event)">SKIP ▶</button>
+              </div>
+              <div class="logo-btm">
+                <div class="logo">
+                  <a href="https://a01048222597.wixsite.com/my-site-2/home">
+                    <img src="https://i.postimg.cc/6qYsr2VH/Frame.png" alt="logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="step-box">
+              <div class="step-1920">
+                <img src="https://i.postimg.cc/gJyb0Bxb/step-2.png" alt="step-2">
+              </div>
+              <div class="step-1024">
+                <img src="https://i.postimg.cc/MTQWwg3m/step-1024-2.png" alt="step-2">
+              </div>
+              <div class="step-768">
+                <img src="https://i.postimg.cc/8zZkmRrM/step-768-2.png" alt="step-2">
+              </div>
+              <div class="step-480">
+                <img src="https://i.postimg.cc/RhwV72cZ/step-480-2.png" alt="step-2">
+              </div>
+            </div>
+          </div>
+
+          <!-- 페이지 3 -->
+          <div id="page3" class="page form-last mb-50" style="display:none;">
+            <div class="page-wrap form-wrap form-wrap-3">
+              <div class="head-text mb-50">
+                <div class="head-1">
+                  <span>
+                    <span class="head-yb">장기렌트/리스</span>
+                    &nbsp;27개 업체별 견적비교 시스템</span>
+                </div>
+                <div class="head-480">
+                  <span class="head-yb">장기렌트/리스</span>
+                  <br>
+                  <span>27개 업체별 견적비교 시스템</span>
+                </div>
+                <div class="head-2">
+                  <span>월 납입금 산출을 위한 정보를 입력해주세요. 카카오톡, 문자로 견적서를 발송해드립니다.</span>
+                </div>
+                <div class="head-768">
+                  <span>월 납입금 산출을 위한 정보를 입력해주세요.</span>
+                  <br>
+                  <span>카카오톡, 문자로 견적서를 발송해드립니다.</span>
+                </div>
+              </div>
+              <div class="last-head mb-50">
+                <span class="label-head">견적 요청이 완료되었습니다!</span>
+              </div>
+              <div class="home-link">
+                <a href="https://a01048222597.wixsite.com/my-site-2/home" class="link-btn" target="_top">렌트/리스하는 사람들
+                  둘러보기</a>
+              </div>
+              <div class="logo-btm">
+                <div class="logo">
+                  <a href="https://a01048222597.wixsite.com/my-site-2/home">
+                    <img src="https://i.postimg.cc/6qYsr2VH/Frame.png" alt="logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="step-box">
+              <div class="step-1920">
+                <img src="https://i.postimg.cc/g0ZPC0dJ/step-3.png" alt="step-3">
+              </div>
+              <div class="step-1024">
+                <img src="https://i.postimg.cc/v8nBwxpw/step-1024-3.png" alt="step-3">
+              </div>
+              <div class="step-768">
+                <img src="https://i.postimg.cc/N0LsJK1V/step-768-3.png" alt="step-3">
+              </div>
+              <div class="step-480">
+                <img src="https://i.postimg.cc/KvyYGv2k/step-480-3.png" alt="step-3">
+              </div>
+            </div>
+          </div>
     </form>
   </div>
 </body>
+
 </html>
